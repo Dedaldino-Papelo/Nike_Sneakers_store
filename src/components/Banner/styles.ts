@@ -2,10 +2,13 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
     container: {
-        width: 368,
+        width: 348,
         height: 296,
         backgroundColor: "#3A4757",
-        borderRadius: 30
+        borderRadius: 30,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: 20
     },
     texts: {
         width: 294,
@@ -19,8 +22,10 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: "900",
     },
-    text2: {
-
+    textButton: {
+        color: "#3A4757",
+        fontSize: 16,
+        fontWeight: '800'
     },
     button: {
         width: 112,
@@ -33,6 +38,9 @@ const styles = StyleSheet.create({
     ButtonSneaker: {
         flexDirection: "row",
         marginLeft: 36,
+    },
+    image: {
+        left: -60
     }
 })
 
