@@ -1,4 +1,5 @@
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
+import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 import styles from './style'
 import Header from '../../components/Header'
@@ -8,12 +9,13 @@ import Sneaker from '../../components/sneakers/index'
 
 const Index = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
+      <StatusBar style='auto' />
       <Header />
       <Category />
       <Banner />
       <Sneaker />
-    </View>
+    </ScrollView>
   )
 }
 

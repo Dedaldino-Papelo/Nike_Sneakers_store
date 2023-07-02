@@ -3,7 +3,7 @@ const Data = [
     
     { 
         id: '1', 
-        title: "Nike Air Max Plus", 
+        title: "Nike Revolution", 
         price: 130,
         src: require('./assets/cipo-removebg.png'),
     },
@@ -15,7 +15,7 @@ const Data = [
     },
     { 
         id: '3', 
-        title: "Nike Air Max Plus", 
+        title: "Nike Fly Minus", 
         price: 285,
         src: require('./assets/nike_grey.png'),
     }
