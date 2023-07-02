@@ -37,9 +37,24 @@ const styles = StyleSheet.create({
     },
     colorText: {
         color: "#E0E5EB",
-        fontSize: 24,
-        fontWeight: "700"
-
+        fontSize: 20,
+        fontWeight: "800"
+    },
+    DescFooter: {
+        flexDirection: "row",
+        gap: 10
+    },
+    Title: {
+        color: "rgba(224, 229, 235, 0.50)",
+        fontSize: 20,
+        fontWeight: "800"
+    },
+    prodInfo: {
+        color: "rgba(224, 229, 235, 0.50)",
+        fontSize: 14,
+        fontWeight: '400',
+        lineHeight: 22,
+        marginTop: 16
     }
 })
 

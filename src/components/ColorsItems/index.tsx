@@ -1,16 +1,17 @@
-import { View, Text,ImageSourcePropType, Image } from 'react-native'
+import { View, Text,ImageSourcePropType, Image, TouchableWithoutFeedback } from 'react-native'
 import React from 'react'
 import styles from './style'
 
 type props = {
-  img: ImageSourcePropType
+  img: ImageSourcePropType,
+  setSneaker: any
 }
 
-const Index = ({ img }: props) => {
+const Index = ({ img, setSneaker }: props) => {
   return (
-    <View style={styles.container}>
-      <Image style={styles.img} source={img} />
-    </View>
+    <TouchableWithoutFeedback onPress={() => setSneaker(img) } style={styles.container}>
+      <Image  style={styles.img} source={img} />
+    </TouchableWithoutFeedback>
   )
 }
 
