@@ -17,7 +17,8 @@ const index = () => {
           renderItem={({ item }) => <SneakersItems 
             title={item.title} 
             price={item.price} 
-            src={item.src} />}
+            src={item.src}
+            colors={item.colors} />}
         />
     </View>
   )

@@ -30,6 +30,16 @@ const styles = StyleSheet.create({
         width: 308,
         height: 209.745,
         resizeMode: 'contain'
+    },
+    colorsWrapper: {
+        marginStart: 30,
+        marginTop: 30
+    },
+    colorText: {
+        color: "#E0E5EB",
+        fontSize: 24,
+        fontWeight: "700"
+
     }
 })
 

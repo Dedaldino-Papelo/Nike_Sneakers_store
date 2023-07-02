@@ -7,10 +7,11 @@ import { useNavigation, NavigationProp } from '@react-navigation/native';
 export type props = {
     title: string;
     price: number;
-    src: ImageSourcePropType
+    src: ImageSourcePropType,
+    colors: Array<any>
 }
 
-const index = ({ title,price,src }: props) => {
+const index = ({ title,price,src, colors }: props) => {
 
   const navigation = useNavigation<NavigationProp<any>>();
 
@@ -18,7 +19,8 @@ const index = ({ title,price,src }: props) => {
     <TouchableOpacity style={styles.container} onPress={() => navigation.navigate("Details", {
         title,
         price,
-        src
+        src,
+        colors
       })
     }>
       <View style={styles.priceWrapper}>
