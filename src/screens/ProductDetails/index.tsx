@@ -14,6 +14,7 @@ import DetailsHeader from "../../components/DetailsHeader/index";
 import ColorItems from "../../components/ColorsItems/index";
 import Sizes from "../../components/Sizes/index";
 import CartButton from "../../components/CartButtom/Index";
+import { MotiImage } from 'moti'
 
 const Index = ({ route }: any) => {
   const { title, price, src, colors } = route.params;
@@ -28,7 +29,20 @@ const Index = ({ route }: any) => {
           <Text style={styles.text}>{title}</Text>
         </View>
         <View style={styles.imageContainer}>
-          <Image style={styles.img} source={sneaker} />
+          <MotiImage
+            from={{
+              translateX: 340
+            }}
+            animate={{
+              translateX: 0
+            }} 
+            transition={{
+                type:"spring",
+                delay: 400,
+            }}
+            style={styles.img} 
+            source={sneaker} 
+            />
         </View>
       </View>
       <View style={styles.footer}>
@@ -39,7 +53,7 @@ const Index = ({ route }: any) => {
             showsHorizontalScrollIndicator={false}
             data={colors}
             keyExtractor={(item) => item.id}
-            renderItem={({ item }) => <ColorItems key={item} img={item.img} setSneaker={setSneaker} />}
+            renderItem={({ item }) => <ColorItems key={item.id} img={item.img} setSneaker={setSneaker} />}
           />
         </View>
         <View style={styles.colorsWrapper}>
